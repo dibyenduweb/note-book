@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import axios from 'axios';
@@ -44,8 +45,8 @@ const TextArea = ({ onSave }) => {
 
   return (
     <>
-      <div className='flex gap-6 mx-auto w-96'>
-        <div className="mb-4 text">
+      <div className='lg:flex gap-6 lg:mx-auto w-96'>
+        <div className="lgL\:\\mb-4 text">
           <label className="flex items-center gap-2 text-sm font-bold mb-2 w-60">
             Title:
             <input

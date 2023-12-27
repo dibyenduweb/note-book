@@ -19,30 +19,17 @@ const Navbar = () => {
           className={({ isActive }) =>
             isActive ? 'btn btn-sm bg-sky-700 text-white normal-case' : 'btn btn-ghost btn-sm normal-case'
           }
-          to="/"
-        >
-          Create new note
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? 'btn btn-sm bg-sky-700 text-white normal-case' : 'btn btn-ghost btn-sm normal-case'
-          }
           to="/viewnot"
         >
           View all notes
         </NavLink>
       </li>
-
-
-
     </>
   );
 
   return (
-    <div className="navbar w-[1200px] mx-auto rounded-sm shadow-xl top-0 z-50 ">
-      <div className="navbar-center">
+    <div className="navbar w-[1200px] mx-auto rounded-sm shadow-xl top-0 z-50">
+       <div className="navbar-center">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -60,9 +47,9 @@ const Navbar = () => {
           </ul>
         </div>
       
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal items-center ml-36 px-1">{navLinks}</ul>
+      </div> 
+      <div className="navbar hidden  lg:flex lg:justify-center">
+        <ul className="menu menu-horizontal items-center  px-1">{navLinks}</ul>
       </div>
     </div>
   );
